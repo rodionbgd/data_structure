@@ -35,6 +35,7 @@ export default class LinkedList {
         let prev, next, node;
         prev = null;
         node = this.head;
+        this.tail = this.head;
         while (node) {
             next = node.next;
             node.next = prev;
